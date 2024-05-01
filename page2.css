@@ -1,0 +1,32 @@
+/* img{
+    width: 500px;
+    height: 300px;
+} */
+*{
+    vertical-align: top;
+}
+.text-span{
+    font-family: Consolas;
+}
+.textdiv{
+    display: inline-block;
+    color: white;
+}
+.b{
+    color: rgba(255, 255, 255, 0.589);
+} 
+
+.main-img-cont{
+    width: 35%;
+}
+.main-text-cont{
+    width: 60%;
+}
+
+.main-img-cont, .main-text-cont{
+    display: inline-block;
+    height: 600px;
+}
+.main-img-cont img{
+    width: 90%;
+}

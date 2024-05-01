@@ -1,0 +1,39 @@
+*{
+    color: white;
+    font-family: Trebuchet MS;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(37, 10, 61);
+
+}
+header{
+    min-height: 14vh;
+    background-color: rgba(0, 0, 0, 0.205) ;
+}
+h1{
+    padding: 3%;
+    font-size: 50px;
+}
+main{
+    margin: 3%;
+    padding: 5%;
+    font-size: 25px;
+}
+img{
+    width: 20vh;
+    height: 30vh;
+    margin: 2%;
+}
+.anime{
+    display: inline-block;
+    width: 230px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.171);
+    padding: 1%;
+    margin: 2%;
+}
+a{
+    text-decoration: none;
+}
