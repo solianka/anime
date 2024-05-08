@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chips.css">
+    <script src="chips.js" defer></script>
+    <link rel="stylesheet" href="css/rSlider.min.css">
+    <script src="js/rSlider.min.js" defer></script>
+    <link rel="stylesheet" href="slide.css">
 </head>
 
 <body>
@@ -13,12 +18,67 @@
         <h1 align="center">Аніме</h1>
     </header>
     <main>
-        <div class="main-">
+        <!-- <div class="slider-container">
+            <input type="text" id="slider" class="slider" />
+        </div> -->
+        <script>
+            (function () {
+                'use strict';
+
+                var init = function () {
+
+                    let dates = []
+
+                    for (let i = 1975; i < 2024; i++) {
+                        dates.push(i)
+                    }
+
+                    var slider = new rSlider({
+                        target: '#slider',
+                        values: dates,
+                        range: true,
+                        set: [1975, 2024],
+                        onChange: function (vals) {
+                            console.log(vals);
+                        }
+                    });
+                };
+                window.onload = init;
+            })();
+        </script>
+        <div align="left" class="main-menu round">
+            <div class="main-header">Підбірка аніме</div>
+            <hr>
+            <fieldset class="menu">
+                Жанр
+                <div class="form-field">
+                    <div class="chips">
+                    </div>
+                </div>
+                <select name="" id="genre-select">
+                    <option value="">Всі жанри</option>
+                    <option value="">Бойовик</option>
+                    <option value="">Буденність</option>
+                    <option value="">Драма</option>
+                    <option value="">Джьосей</option>
+                    <option value="">Надприродне</option>
+                    <option value="">Комедія</option>
+                    <option value="">Музичний</option>
+                    <option value="">Ісекай</option>
+                    <option value="">Психологія</option>
+                    <option value="">Триллер</option>
+                </select>
+                Рік виходу
+                <div class="slider-container">
+                    <input type="text" id="slider" class="slider" />
+                </div>
+            </fieldset>
         </div>
-        <div class="main-anime">
+        <div class="main-anime round">
             <div>
-                <a  href="oshinoko.html">
-                    <div class="anime"><img
+                <a href="oshinoko.html">
+                    <div class="anime">
+                        <img class="anime-img"
                             src="https://uaserials.vip/uploads/posts/2024-01/1704728796_jp3ymymlqbnf7gdybwajnc90xmp.jpg"
                             alt="">
                         <div>Дитина улюбленця</div>
@@ -26,7 +86,32 @@
                 </a>
                 <a href="nana.html">
                     <div class="anime">
-                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/f/f3/Nana_ob.jpg/230px-Nana_ob.jpg"
+                        <img class="anime-img"
+                            src="https://upload.wikimedia.org/wikipedia/ru/thumb/f/f3/Nana_ob.jpg/230px-Nana_ob.jpg"
+                            alt="">
+                        <div>Нана</div>
+                    </div>
+                </a>
+                <a href="nana.html">
+                    <div class="anime">
+                        <img class="anime-img"
+                            src="https://anitube.in.ua/uploads/posts/2022-01/1642070005_farforova-lyalechka-zakohalasya.jpg"
+                            alt="">
+                        <div>Ця фарфорова лялечка закохалась</div>
+                    </div>
+                </a>
+                <a href="nana.html">
+                    <div class="anime">
+                        <img class="anime-img"
+                            src="https://upload.wikimedia.org/wikipedia/ru/thumb/f/f3/Nana_ob.jpg/230px-Nana_ob.jpg"
+                            alt="">
+                        <div>Нана</div>
+                    </div>
+                </a>
+                <a href="nana.html">
+                    <div class="anime">
+                        <img class="anime-img"
+                            src="https://upload.wikimedia.org/wikipedia/ru/thumb/f/f3/Nana_ob.jpg/230px-Nana_ob.jpg"
                             alt="">
                         <div>Нана</div>
                     </div>

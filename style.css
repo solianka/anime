@@ -1,39 +1,89 @@
-*{
+* {
     color: white;
     font-family: Trebuchet MS;
     margin: 0%;
     padding: 0%;
+    vertical-align: top;
 }
-body{
+
+body {
     background-color: rgb(37, 10, 61);
 
 }
-header{
+
+header {
     min-height: 14vh;
-    background-color: rgba(0, 0, 0, 0.205) ;
+    background-color: rgba(0, 0, 0, 0.205);
 }
-h1{
+
+h1 {
     padding: 3%;
     font-size: 50px;
 }
-main{
+
+main {
     margin: 3%;
-    padding: 5%;
+    padding: 3%;
     font-size: 25px;
 }
-img{
+
+.anime-img {
     width: 20vh;
     height: 30vh;
     margin: 2%;
 }
-.anime{
+
+.anime {
     display: inline-block;
-    width: 230px;
+    width: 25vh;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.171);
+    background-color: rgba(255, 255, 255, 0.100);
     padding: 1%;
     margin: 2%;
 }
-a{
+
+a {
     text-decoration: none;
+}
+
+.main-menu {
+    width: 20%;
+    display: inline-block;
+    /* height: 700px; */
+    min-height: 700px;
+    background-color: rgba(255, 255, 255, 0.100);
+}
+
+.round{
+    border-radius: 1%;
+}
+
+.main-header {
+    padding: 5%;
+    font-size: 30px;
+}
+
+.menu {
+    border: none;
+    padding: 5%;
+    font-size: 25px;
+}
+
+
+select {
+    background-color: rgb(37, 10, 61);
+    width: 95%;
+    font-size: 20px;
+}
+
+option {
+    margin: 5%;
+}
+
+.main-anime {
+    width: 79%;
+    display: inline-block;
+    /* height: 700px; */
+    min-height: 700px;
+    background-color:  rgba(255, 255, 255, 0.100); ;
 }
